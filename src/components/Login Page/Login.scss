@@ -1,0 +1,172 @@
+/*----------------------------
+ Google Fonts - Montserrat
+----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+$primary-color: #664de4;
+$textPrimaryColor: #151b28;
+$textSecondaryColor: #646d7e;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+p,
+h2 {
+  margin: 0;
+  color: $textPrimaryColor;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 500px;
+  min-height: 80vh;
+  margin: auto;
+}
+
+/* Button Style */
+.login-options {
+  width: 100%;
+  display: flex;
+
+  .link{
+    width: 100%;
+  }
+
+  button {
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid $primary-color;
+    padding: 0.9rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+/*----------------------------------------- 
+-------------Login Form--------------------
+------------------------------------------*/
+.login-form {
+  background-color: #fff;
+  width: 100%;
+
+  padding: 4em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  h2 {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  label {
+    color: $textSecondaryColor;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 2px $textSecondaryColor;
+    font-size: 1rem;
+
+    &:focus,
+    &:active {
+      outline: 1px solid $primary-color;
+    }
+  }
+}
+
+.forget-password {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: 500;
+  }
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+
+  button {
+    background-color: $primary-color;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+}
+
+/*----------------------------------------- 
+-------------Signup Form--------------------
+------------------------------------------*/
+
+/*----------------------------------------- 
+-------------Message--------------------
+------------------------------------------*/
+
+.message {
+  margin-top: 3rem;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: 500;
+  }
+}
+
+.error {
+  display: inline-block;
+  color: #ff3333;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.login-error {
+  border: 1px solid #ff3333;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #ff3333;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
